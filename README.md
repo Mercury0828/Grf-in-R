@@ -38,12 +38,12 @@ for each test sample,
 &emsp;&emsp; for each tree group(considering OOB),  
 &emsp;&emsp;&emsp;&emsp;  for each tree,  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    retrieve sufficient statistics  
-&emsp;&emsp; compute average sufficient statistics
+&emsp;&emsp; compute average sufficient statistics  
 &emsp;&emsp; compute point estimator  
 &emsp;&emsp; calculate variance estimator
  
 ### forest predictor -> predictions
-find the leaves for all test samples(or OOB samples)
+find the leaves for all test samples(or OOB samples)  
 collect predictions
 
 
@@ -52,5 +52,5 @@ collect predictions
 Working on data and tree classes
 
 ### TODO
-Test the written function, add comments
+Test the written function, add comments  
 Code for treeTrainer
