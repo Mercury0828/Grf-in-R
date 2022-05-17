@@ -13,8 +13,8 @@ Stores the structure of a single tree and some operations in the tree
 ### treeTrainer -> tree
 Training method for a single tree
 Draw half sample for honesty
-Until termination condition,
-  draw possible split variables
+Until termination condition,\\
+  draw possible split variables\\
   compute peseudo outcomes,
   find best split
  repopulate leaves for honesty
