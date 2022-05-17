@@ -12,33 +12,35 @@ Stores the structure of a single tree and some operations in the tree
 
 ### treeTrainer -> tree
 Training method for a single tree
-Draw half sample for honesty
-Until termination condition,\\
-  draw possible split variables\\
-  compute peseudo outcomes,
-  find best split
- repopulate leaves for honesty
- precompute sufficient statistics
+
+Draw half sample for honesty  
+Until termination condition,  
+&emsp;&emsp; draw possible split variables  
+&emsp;&emsp;&emsp;&emsp;  compute peseudo outcomes,  
+&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;  find best split  
+&emsp;&emsp; repopulate leaves for honesty  
+&emsp;&emsp; precompute sufficient statistics  
 
 ### forest 
 Stored the collection of trees in the forest and training observations and out-of-bag information
 
 ### forestTrainer -> forest
-for each tree group,
-  draw half sample
-  for each tree in group,
-   train tree
+for each tree group,  
+&emsp;&emsp;draw half sample  
+&emsp;&emsp;  for each tree in group,  
+&emsp;&emsp;&emsp;&emsp;   train tree
    
 ### predictions
 Stored estimates of the variables and estimates of the variance of the variables
 
 ### prediction collector -> predictions
-for each test sample,
- for each tree group(considering OOB),
-  for each tree,
-    retrieve sufficient statistics
- compute point estimator
- calculate variance estimator
+for each test sample,  
+&emsp;&emsp; for each tree group(considering OOB),  
+&emsp;&emsp;&emsp;&emsp;  for each tree,  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    retrieve sufficient statistics  
+&emsp;&emsp; compute average sufficient statistics
+&emsp;&emsp; compute point estimator  
+&emsp;&emsp; calculate variance estimator
  
 ### forest predictor -> predictions
 find the leaves for all test samples(or OOB samples)
